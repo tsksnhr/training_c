@@ -3,6 +3,26 @@
 
 int main(void){
 
+    char str[80], *p;
+
+    printf("type string.\n");
+    gets(str);
+
+    p = str;
+
+    while ((*p) && (*p != ' ')){
+        p++;
+    }
+
+    printf(p);
+
+    return 0;
+}
+
+/*
+
+int main(void){
+
     char str[80], str_alt[80];
     char *pstr;
     int length, i, flg;
@@ -32,3 +52,6 @@ int main(void){
 
     return 0;
 }
+
+*/
+
