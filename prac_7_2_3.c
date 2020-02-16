@@ -17,7 +17,7 @@ int print_char(void){
     printf("type character.\n");
     str = getche();
 
-    if(str != 'q'){                             /* while is wrong (nonstop-loop) */
+    if(str != 'q'){                             /* while is wrong (nonstop-loop), why? */
         printf("your character is %c\n", str);
         print_char();
     }
