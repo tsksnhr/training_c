@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int atoz(char *p);
+int atoz(char temp);
 
 int main(void){
 
@@ -8,7 +8,7 @@ int main(void){
     temp = 'a';
     p = &temp;
 
-    atoz(p);
+    atoz(temp);
 
 //    printf("%p\n", p);
 //    printf("%p\n", p+1);
@@ -17,14 +17,14 @@ int main(void){
 }
 
 
-int atoz(char *p){
+int atoz(char temp){
 
-    if (*p == 'z'){
-        printf("%c", p);
+    if (temp == 'z'){
+        printf("%c", temp);
     }
     else{
-        printf("%c", p);
-        atoz(p+1);
+        printf("%c", temp);
+        atoz(temp+1);
     }
 
     return 0;
